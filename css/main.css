@@ -103,6 +103,18 @@ button{
     background-color: rgba(207, 205, 205, 0.3);
 }
 
+button:hover{
+    background-color: rgba(207, 205, 205, 0.6);
+    cursor: pointer;
+}
+@media(max-width:650px){
+    button{
+        height:30px;
+        width:100px;
+        font-size:12px;
+    }
+}
+
 .links{
     display: flex;
     align-items: center;
@@ -121,6 +133,7 @@ button{
 .links ul li{
     list-style: none;
     margin: auto 20px;
+    cursor: pointer;
     
 } 
 
@@ -168,4 +181,10 @@ footer .right ul li, footer .left ul li{
 
 footer .right ul li:hover, footer .left ul li:hover{
     text-decoration: underline;
+}
+
+@media(max-width:650px){
+    footer .right ul , footer .left ul {
+        flex-direction: column;
+    }
 }
